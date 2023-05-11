@@ -1,0 +1,170 @@
+/* Start Hero Section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/hero4.png");
+    background-position: top 30px right 0;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+@media (max-width: 991px) {
+    .hero {
+        background-position: top 30% right 30%;
+    }
+}
+@media (max-width: 767px) {
+    .hero {
+        background-position: 55%;
+    }
+}
+.hero .container h2 {
+    margin: 10px 0;
+}
+.hero .container h1 {
+    color: var(--main-color);
+}
+.hero .container .btn {
+    background-image: url("../img/button.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+    background-color: transparent;
+    padding: 14px 80px 14px 65px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--main-color);
+    cursor: pointer;
+}
+/* End Hero Section */
+/* Start Calling Section */
+.calling {
+    width: 100%;
+    height: 40vh;
+    background-image: url("../img/banner/b2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.calling h4,
+.calling h2 {
+    color: var(--white-color);
+    text-align: center;
+}
+.calling h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 5px 0;
+}
+.calling h2 span {
+    color: var(--red);
+}
+/* End Calling Section */
+/* Start Banner */
+.banner .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+@media (max-width: 991px) {
+    .banner .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.banner .container .img-one,
+.banner .container .img-two {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 70px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    transition: var(--transition);
+}
+.banner .container .img-one {
+    background-image: url("../img/banner/b17.jpg");
+}
+.banner .container .img-two {
+    background-image: url("../img/banner/b10.jpg");
+}
+.banner .container .img-one p,
+.banner .container .img-two p {
+    margin: 10px 0;
+}
+.banner .container .img-one p,
+.banner .container .img-two p,
+.banner .container .img-one h4,
+.banner .container .img-two h4,
+.banner .container .img-one .btn-custum,
+.banner .container .img-two .btn-custum {
+    color: var(--white-color);
+}
+.banner .container .img-one .btn-custum,
+.banner .container .img-two .btn-custum {
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    border-radius: 0;
+    padding: 12px 15px;
+}
+.banner .container .img-one:hover .btn-custum,
+.banner .container .img-two:hover .btn-custum {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+/* End Banner */
+/* Start Banner Two */
+.banner-two {
+    padding-bottom: var(--section-padding);
+}
+.banner-two .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+@media (max-width: 991px) {
+    .banner-two .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 767px) {
+    .banner-two .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.banner-two .container .img {
+    position: relative;
+    transition: var(--transition);
+}
+.banner-two .container .img img {
+    max-width: 100%;
+    height: 100%;
+}
+.banner-two .container .img .text {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.banner-two .container .img .text h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: -1px;
+    color: var(--white-color);
+}
+.banner-two .container .img .text h3 {
+    font-size: 25px;
+    color: var(--red);
+}
+/* End Banner Two */

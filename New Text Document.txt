@@ -1,0 +1,42 @@
+يمثل العنصر <abbr></abbr>
+اختصارًا ويوفِّر اختياريًا شرحًا له، وعند إضافة الشرح يجب أن تحتوي الخاصية العنوان على الشرح الكامل لهذا الاختصار فقط ولا يسمح بأي قيمة أخرى.
+
+
+بعض المتصفحات مثل Internet Explorer لا ينُسِّقه بشكلٍ مختلف عن عنصر <span>.
+متصفحات Opera و Firefox وغيرهما تضيف خطًا منقطًا تحت محتوى العنصر. أي ستضبط الخاصية text-decoration إلى underline dotted.
+بعض المتصفحات تضيف خطًا منقطًا لكنها تعرض العنصر بتنسيق small caps، وللتخلص من هذا التنسيق فاستخدم الخاصية font-variant: none في CSS.
+
+
+
+<abbr title="World Health Organization">WHO</abbr>
+وبيظهر هكذا
+WHO
+....
+حيث بيكتب تحتة خط منقط 
+وبيكون عبارة عن 
+abbr {
+  display: inline;
+}
+
+
+
+
+<marque></marque>
+التاج دا بيخلى النص او اى حاجة احطها جواه تتحرك سواء لفوق او لتحت او يمين او شمال ولية خواص هكذا 
+<marquee width="60%" direction="up" height="100px">
+                    This is a sample scrolling text that has scrolls in the upper direction.
+                    </marquee>
+
+
+width	provides the width or breadth of a marquee. For example width="10" or width="20%"
+height	provides the height or length of a marquee. For example height="20" or height="30%"
+direction	provides the direction or way in which your marquee will allow you to scroll. The value of this attribute can be: left, right, up or down
+scrolldelay	provides a feature whose value will be used for delaying among each jump.
+scrollamount	provides value for speeding the marquee feature
+behavior	provides the scrolling type in a marquee. That scrolling can be like sliding, scrolling or alternate
+loop	provides how many times the marquee will loop
+bgcolor	provides a background color where the value will be either the name of the color or the hexadecimal color-code.
+vspace	provides a vertical space and its value can be like: vspace="20" or vspace="30%"
+hspace	provides a horizontal space and its value can be like: hspace="20" or hspace="30%"
+
+

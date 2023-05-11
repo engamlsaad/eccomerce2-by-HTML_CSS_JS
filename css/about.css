@@ -1,0 +1,66 @@
+/* Start About */
+.about {
+    background-image: url("../img/about/banner.png");
+ }
+ .about-us {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+ }
+ .about-us .container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+ }
+ @media (max-width: 767px) {
+   .about-us .container {
+      flex-direction: column;
+   }
+ }
+ .about-us .container .img {
+    flex-basis: 50%;
+ }
+ .about-us .container .img img {
+   width: 100%;
+   height: auto;
+}
+ .about-us .container .about-text {
+    flex-basis: 45%;
+ }
+ @media (max-width: 767px) {
+    .about-us .container .img {
+        flex-basis: 100%;
+     }
+     .about-us .container .about-text {
+        flex-basis: 100%;
+     }
+ }
+ .about-us .container .about-text p {
+    line-height: 1.3;
+ } 
+ .download {
+    text-align: center;
+ }
+ .download h1 {
+    margin-bottom: 15px;
+ }
+ .download h1 a {
+    text-decoration: underline;
+    color: #673ab7;
+ }
+ .download .video {
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+    border-radius: 20px;
+ }
+ @media (max-width: 767px) {
+   .download .video {
+      width: 90%;
+   }
+ }
+ .download .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+ }
+/* End About */

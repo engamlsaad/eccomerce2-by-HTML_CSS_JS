@@ -1,0 +1,75 @@
+/* Start Products */
+.product-page {
+    padding-top: 150px;
+    padding-bottom: var(--section-padding);
+}
+.product-page .container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.product-page .container .left {
+    flex-basis: 45%;
+}
+.product-page .container .right {
+    flex-basis: 45%;
+}
+@media (max-width: 991px) {
+    .product-page .container .left {
+        flex-basis: 100%;
+    }
+    .product-page .container .right {
+        flex-basis: 100%;
+    }
+}
+.product-page .container .left img {
+    width: 100%;
+}
+.product-page .container .left .img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.product-page .container .left .img img {
+    width: 24%;
+    cursor: pointer;
+}
+.product-page .container .right .top {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.product-page .container .right h3 {
+    font-size: 20px;
+    margin: 5px 0 25px 0;
+}
+.product-page .container .right h4 {
+    font-size: 28px;
+}
+.product-page .container .right .select {
+    display: block;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+.product-page .container .right .adding {
+   display: flex;
+   gap: 5px;
+   margin: 10px 0;
+}
+.product-page .container .right .adding input {
+    width: 40px;
+    padding-left: 5px;
+}
+.product-page .container .right .adding .btn-custum {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+.product-page .container .right .text h4 {
+    font-size: 20px;
+    margin: 25px 0;
+}
+.product-page .container .right .text p {
+    font-size: 18px;
+    line-height: 1.15;
+}
+/* End Products */
