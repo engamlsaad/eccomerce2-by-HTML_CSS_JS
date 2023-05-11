@@ -46,10 +46,21 @@
 .product-page .container .right h4 {
     font-size: 28px;
 }
-.product-page .container .right .select {
+.product-page .container .right .selected {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.product-page .container .right .selected .select {
     display: block;
     padding: 5px 10px;
     margin-top: 10px;
+}
+.product-page .container .right .selected .label {
+    display: none;
+    width: fit-content;
+    color: red;
+    transition: var(--transition);
 }
 .product-page .container .right .adding {
    display: flex;

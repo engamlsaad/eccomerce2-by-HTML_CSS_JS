@@ -25,3 +25,23 @@ menuBars.onclick = function () {
 close.onclick = function () {
     menuLinks.classList.remove("open");
 };
+
+let salary = document.getElementById("salary");
+let num = document.getElementById("number");
+
+num.onchange = function () {
+    salary.innerHTML = `$${parseInt(num.value) * 139.00}`; 
+}
+
+let select = document.querySelector(".select");
+let label = document.querySelector(".label");
+let cart = document.querySelector(".btn-cart");
+
+
+cart.addEventListener("click", () => {
+    if (select.value === "Select Size") {
+        label.style.display = "block";
+    } else {
+        label.style.display = "none";
+    }
+})
